@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Temperature"
+    android:background="@color/colorPrimaryDark"
+
+    >
+
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center"
+
+        android:visibility="visible"
+        app:srcCompat="@drawable/temp" />
+    <EditText
+        android:id="@+id/editInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Your Value"
+        android:inputType="number"
+        android:layout_marginTop="50dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:shadowColor="@color/colorAccent"
+        android:textSize="30dp"
+
+
+
+
+        />
+
+    <RadioGroup
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+
+        >
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/r1"
+            android:text="F to C"
+            android:textSize="20dp"
+            />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/r2"
+            android:text="C to F"
+            android:textSize="20dp"
+
+
+
+            />
+    </RadioGroup>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/b1"
+        android:text="Convert"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:shadowColor="@color/colorAccent"
+        android:background="@drawable/cbtn"
+        android:textColor="@color/white"
+        android:textSize="30dp"
+
+        />
+</LinearLayout>
