@@ -50,5 +50,11 @@ public class Temperature extends AppCompatActivity {
                 }
             }
         });
+
+
+    }
+
+    public void onClick(View v) {
+        mInput.getText().clear(); //or you can use editText.setText("");
     }
 }

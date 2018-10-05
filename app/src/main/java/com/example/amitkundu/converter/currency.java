@@ -24,7 +24,7 @@ public class currency extends AppCompatActivity {
     EditText mEditText;
     Button mButton;
     TextView mResult;
-
+    String result;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,7 +35,6 @@ public class currency extends AppCompatActivity {
         mSpinner = (Spinner) findViewById(R.id.currency_spinner);
         mButton = (Button) findViewById(R.id.result);
         mResult = (TextView) findViewById(R.id.show);
-
 
         final ArrayAdapter<Currency> List =
                 new ArrayAdapter<Currency>(this, android.R.layout.simple_spinner_item, CurrencyConverter.getCurrencyList()) {
@@ -70,6 +69,7 @@ public class currency extends AppCompatActivity {
         mButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
                 final String from = "USD";
                 final String to = mSpinner.getSelectedItem().toString();
                 if (mEditText.getText().toString().length() > 0) {
@@ -82,6 +82,8 @@ public class currency extends AppCompatActivity {
                                 CurrencyConverter.reset();
                             } else {
                                 // Do someting with value.
+
+                                //result = " "+value.toString();
                                 mResult.setText(CurrencyConverter.formatCurrencyValue(to, value));
                                 CurrencyConverter.reset();
                             }
