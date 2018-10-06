@@ -97,4 +97,8 @@ public class currency extends AppCompatActivity {
 
 
     }
+
+    public void CurrencyOnclick(View v) {
+        mEditText.getText().clear(); //or you can use editText.setText("");
+    }
 }

@@ -32,6 +32,7 @@
         android:textColorHint="@color/white"
         android:textSize="30dp"
         android:inputType="number"
+        android:onClick="CurrencyOnclick"
         />
     <TextView
         android:id="@+id/show"
