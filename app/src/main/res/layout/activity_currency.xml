@@ -33,6 +33,7 @@
         android:textSize="30dp"
         android:inputType="number"
         android:onClick="CurrencyOnclick"
+        android:imeOptions="actionDone"
         />
     <TextView
         android:id="@+id/show"

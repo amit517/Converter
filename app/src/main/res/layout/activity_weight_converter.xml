@@ -31,7 +31,7 @@
         android:shadowColor="@color/colorAccent"
         android:textSize="25dp"
         android:onClick="onClick"
-
+        android:imeOptions="actionDone"
 
 
         />
